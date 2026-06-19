@@ -1,6 +1,6 @@
-## Dashboard Insights:
+# Dashboard Insights:
 
-1. Executive Dashboard:
+## Executive Dashboard:
 
 <img width="1310" height="737" alt="image" src="https://github.com/user-attachments/assets/1a2ea24a-8f01-432d-a676-d7cf0aa5b50e" />
 
@@ -26,11 +26,11 @@
 - Office Supplies --> second most profitable category (122K).
 - Furniture --> low profit (18K) --> strong sales.
 
-2. Product Analysis:
+## Product Analysis:
 
 <img width="1312" height="735" alt="image" src="https://github.com/user-attachments/assets/0f325379-bd67-44e5-b77c-b84b1a5f8ce3" />
 
-📊 Sales by Sub-Category (Treemap)
+> Sales by Sub-Category (Treemap)
 Phones generated the highest sales (330K).
 Chairs are the second-best selling sub-category (328K).
 Storage, Tables, and Binders also contribute strongly to sales.
