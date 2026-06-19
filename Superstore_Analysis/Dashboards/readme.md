@@ -30,27 +30,47 @@
 
 <img width="1312" height="735" alt="image" src="https://github.com/user-attachments/assets/0f325379-bd67-44e5-b77c-b84b1a5f8ce3" />
 
-> Sales by Sub-Category (Treemap)
-Phones generated the highest sales (330K).
-Chairs are the second-best selling sub-category (328K).
-Storage, Tables, and Binders also contribute strongly to sales.
-Sales are concentrated in a few key sub-categories.
-🏆 Top 10 Products by Sales
-The top product generated 62K sales, much higher than others.
-The second-highest product contributed 27K sales.
-Most top products have sales between 17K–23K.
-A few products drive a large share of total sales.
-💰 Top 10 Products by Profit
-The most profitable product earned 25K profit.
-The second and third products generated 8K and 7K profit.
-Most top-profit products contribute 3K–5K profit.
-Profit is heavily concentrated in a few products.
-📉 Bottom 10 Products by Profit
-All products in this chart are making losses.
-The worst-performing product lost nearly 9K.
-Several products have losses greater than 3K.
-These products need pricing, discount, or cost review to improve profitability.
+> Sales by Sub-Category: 
+- Phones --> highest sales (330K).
+- Chairs --> second-best selling (328K).
+- Storage, Tables, and Binders --> contribute strongly to sales.
+
+> Top 10 Products by Sales:
+- Top product generated 62K sales --> much higher than others.
+- Most top products have sales between 17K–23K.
+
+> Top 10 Products by Profit:
+- Most profitable product earned 25K profit.
+- Most top-profit products contribute 3K–5K profit.
+
+> Bottom 10 Products by Profit:
+- All products in this chart are making losses.
+- The worst-performing product lost nearly 9K.
+- These products need pricing, discount, or cost review to improve profitability.
 
 3. Time Anlaysis:
 
+<img width="1315" height="746" alt="image" src="https://github.com/user-attachments/assets/0f81a888-37c0-47f7-91df-1becfb15f5df" />
 
+> Monthly Sales:
+- November --> highest sales (312K).
+- February --> lowest sales (52K).
+- Sales increased strongly in September and November.
+- Last four months generated strongest sales performance.
+
+> Monthly Profit:
+- December --> highest profit (43K).
+- January --> lowest profit (9K).
+- Profit grew steadily from August to December.
+
+> Yearly Sales:
+- Sales decreased slightly in 2019 compared to 2018.
+- Sales recovered strongly in 2020.
+- 2021 recorded the highest sales (733K).
+- Profit also increased every year from 2019 to 2021.
+
+> Sales by Category and Year:
+- Technology --> highest sales in every year.
+- Furniture consistently ranked second in sales.
+- Office Supplies generated lowest sales among categories.
+- All categories showed higher sales in 2021 than in 2018.
