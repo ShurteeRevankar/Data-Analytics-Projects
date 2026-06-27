@@ -13,9 +13,6 @@ https://data-analytics-projects-hujvuqxaba6cvavgsesffc.streamlit.app/
 <img width="1348" height="818" alt="image" src="https://github.com/user-attachments/assets/5f8135a6-e421-4f8e-9ddc-fd524e57d976" />
 <img width="1293" height="802" alt="image" src="https://github.com/user-attachments/assets/40845efb-fe16-4984-870a-6d01fca8e699" />
 <img width="1328" height="697" alt="image" src="https://github.com/user-attachments/assets/c95f18e6-ea70-42b8-b2af-68e571fda624" />
-
-<img width="1328" height="697" alt="image" src="https://github.com/user-attachments/assets/569a2e52-fbdb-437e-be2c-5d6e082ae225" />
-
 <img width="1372" height="556" alt="image" src="https://github.com/user-attachments/assets/efbf6995-9f31-46ef-9f07-9c85f4786ea4" />
 <img width="1347" height="352" alt="image" src="https://github.com/user-attachments/assets/7c325f18-2848-43d1-825d-c518d094c44d" />
 <img width="1177" height="317" alt="image" src="https://github.com/user-attachments/assets/dd38a7e4-8121-4d3b-a0dd-d5ed298e7ebf" />
