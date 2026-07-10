@@ -5,8 +5,12 @@ import os
 
 # Paths
 
-MODEL_PATH = "models/best_model.pkl"
-ENCODER_PATH = "models/encoder.pkl"
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+MODEL_PATH = BASE_DIR / "models" / "best_model.pkl"
+ENCODER_PATH = BASE_DIR / "models" / "encoder.pkl"
 
 # Load Model
 
