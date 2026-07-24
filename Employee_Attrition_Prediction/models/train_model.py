@@ -11,25 +11,16 @@ from sklearn.metrics import (
     confusion_matrix
 )
 
-# -----------------------------------------
-# Paths
-# -----------------------------------------
 DATA_PATH = Path("data/hr_cleaned.csv")
 
 MODEL_PATH = Path("models/attrition_model.pkl")
 ENCODER_PATH = Path("models/label_encoders.pkl")
 FEATURE_PATH = Path("models/feature_columns.pkl")
 
-# -----------------------------------------
-# Load Dataset
-# -----------------------------------------
 print("Loading Dataset...")
 
 df = pd.read_csv(DATA_PATH)
 
-# -----------------------------------------
-# Drop Unnecessary Columns
-# -----------------------------------------
 drop_columns = [
     "EmployeeCount",
     "EmployeeNumber",
@@ -39,9 +30,6 @@ drop_columns = [
 
 df.drop(columns=drop_columns, inplace=True, errors="ignore")
 
-# -----------------------------------------
-# Target Variable
-# -----------------------------------------
 y = df["AttritionFlag"]
 
 X = df.drop(
@@ -52,9 +40,6 @@ X = df.drop(
     errors="ignore"
 )
 
-# -----------------------------------------
-# Label Encoding
-# -----------------------------------------
 label_encoders = {}
 
 categorical_columns = X.select_dtypes(
@@ -71,14 +56,8 @@ for column in categorical_columns:
 
     label_encoders[column] = encoder
 
-# -----------------------------------------
-# Save Feature Names
-# -----------------------------------------
 feature_columns = X.columns.tolist()
 
-# -----------------------------------------
-# Train Test Split
-# -----------------------------------------
 X_train, X_test, y_train, y_test = train_test_split(
     X,
     y,
@@ -87,9 +66,6 @@ X_train, X_test, y_train, y_test = train_test_split(
     stratify=y
 )
 
-# -----------------------------------------
-# Model
-# -----------------------------------------
 model = RandomForestClassifier(
     n_estimators=300,
     random_state=42
@@ -99,9 +75,6 @@ print("Training Model...")
 
 model.fit(X_train, y_train)
 
-# -----------------------------------------
-# Prediction
-# -----------------------------------------
 y_pred = model.predict(X_test)
 
 accuracy = accuracy_score(
@@ -121,9 +94,6 @@ print("\nConfusion Matrix")
 print("----------------------")
 print(confusion_matrix(y_test, y_pred))
 
-# -----------------------------------------
-# Save Files
-# -----------------------------------------
 MODEL_PATH.parent.mkdir(
     exist_ok=True
 )
