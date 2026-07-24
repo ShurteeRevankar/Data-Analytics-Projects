@@ -9,9 +9,6 @@ from utils.charts import (
     age_distribution,
 )
 
-# ----------------------------------
-# Page Config
-# ----------------------------------
 st.set_page_config(
     page_title="HR Overview",
     page_icon="📊",
@@ -21,9 +18,7 @@ st.set_page_config(
 st.title("📊 HR Overview")
 st.markdown("Explore workforce demographics and key HR metrics.")
 
-# ----------------------------------
 # Load Data
-# ----------------------------------
 df = load_data()
 
 if df.empty:
@@ -31,9 +26,6 @@ if df.empty:
 
 df = preprocess_data(df)
 
-# ----------------------------------
-# Sidebar Filters
-# ----------------------------------
 st.sidebar.header("🔎 Filters")
 
 department = st.sidebar.multiselect(
@@ -67,9 +59,7 @@ filtered_df = df[
     (df["OverTime"].isin(overtime))
 ]
 
-# ----------------------------------
 # KPIs
-# ----------------------------------
 total_emp = len(filtered_df)
 left_emp = filtered_df["Attrition"].eq("Yes").sum()
 active_emp = total_emp - left_emp
@@ -97,9 +87,6 @@ st.metric("💼 Avg Experience", f"{avg_exp:.1f} Years")
 
 st.divider()
 
-# ----------------------------------
-# Charts Row 1
-# ----------------------------------
 col1, col2 = st.columns(2)
 
 with col1:
@@ -114,9 +101,6 @@ with col2:
         use_container_width=True
     )
 
-# ----------------------------------
-# Charts Row 2
-# ----------------------------------
 col3, col4 = st.columns(2)
 
 with col3:
@@ -133,9 +117,7 @@ with col4:
 
 st.divider()
 
-# ----------------------------------
-# Dataset Preview
-# ----------------------------------
+
 st.subheader("📄 Employee Records")
 
 st.dataframe(
@@ -144,9 +126,7 @@ st.dataframe(
     height=450
 )
 
-# ----------------------------------
-# Download Button
-# ----------------------------------
+
 csv = filtered_df.to_csv(index=False).encode("utf-8")
 
 st.download_button(
